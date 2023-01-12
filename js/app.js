@@ -1,11 +1,3 @@
-////////  LOADER START  ////////
-const loader = document.querySelector('#loader-container')
-const load = () => { loader.style.visibility = 'visible'; }
-const timeout = () => { loader.style.visibility = 'hidden'; }
-load();
-setTimeout(timeout, 3000);
-////////  LOADER END  ////////
-
 const appleId = '1629208237';
 const loadPodcastByAppleId = async (id) => {
     try {
