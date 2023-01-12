@@ -257,16 +257,3 @@
     const m = h.register("TRUNK", u);
     return t
 })()));
-
-VANTA.TRUNK({
-    el: "#your-element-selector",
-    mouseControls: true,
-    touchControls: true,
-    gyroControls: false,
-    minHeight: 700.00,
-    minWidth: 700.00,
-    scale: 1.00,
-    scaleMobile: 1.00,
-    color: 0x1327bb,
-    chaos: 5.00
-})
