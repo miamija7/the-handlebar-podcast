@@ -18,7 +18,7 @@ VANTA.TRUNK({
     minHeight: 700.00,
     minWidth: 700.00,
     scale: 1.00,
-    scaleMobile: 1.00,
+    scaleMobile: 7.00,
     color: 0x1327bb,
     chaos: 5.00
 })
