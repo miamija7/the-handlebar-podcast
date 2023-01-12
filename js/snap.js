@@ -4,8 +4,13 @@ const gra = function(min, max) {
 const init = function(){
     let items = document.querySelectorAll('section');
     for (let i = 0; i < items.length; i++){
-        items[i].style.background = randomColor({luminosity: 'light'});
+        items[i].style.background = randomColor();
     }
-    cssScrollSnapPolyfill()
 }
+
+const randomColor = ()=>{
+    const colors = ["#8C8D89", "#515DA9", "#131F70", "#B9B8B5"];
+    return colors[Math.floor(Math.random() * 4)]
+}
+
 init();

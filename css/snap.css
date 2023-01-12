@@ -20,7 +20,7 @@ section {
     text-align: center;
     position: relative;
 }
-h1  {
+.core  {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
