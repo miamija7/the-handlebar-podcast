@@ -18,7 +18,7 @@ VANTA.TRUNK({
     minHeight: 700.00,
     minWidth: 700.00,
     scale: 1.00,
-    scaleMobile: 7.00,
+    scaleMobile: 1.00,
     color: 0x1327bb,
     chaos: 5.00
 })
@@ -108,6 +108,9 @@ animate();
 ////////  MORPH START  ////////
 
 ////////  SNAP START  ////////
+const gra = function(min, max) {
+    return Math.random() * (max - min) + min;
+}
 
 const init = function(){
     let items = document.querySelectorAll('section');
