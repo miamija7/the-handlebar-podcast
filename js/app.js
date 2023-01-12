@@ -15,12 +15,13 @@ VANTA.TRUNK({
     mouseControls: true,
     touchControls: true,
     gyroControls: false,
-    minHeight: 700.00,
-    minWidth: 700.00,
+    minHeight: 200.00,
+    minWidth: 200.00,
     scale: 1.00,
-    scaleMobile: 7.00,
+    scaleMobile: 1.00,
     color: 0x1327bb,
-    chaos: 5.00
+    spacing: 7.0,
+    chaos: 4.00
 })
 ////////  TRUNK END  ////////
 
