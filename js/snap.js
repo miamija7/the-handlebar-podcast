@@ -9,8 +9,8 @@ const init = function(){
 }
 
 const randomColor = ()=>{
-    const colors = ["#8C8D89", "#515DA9", "#131F70", "#B9B8B5"];
-    return colors[Math.floor(Math.random() * 4)]
+    const colors = ["#8C8D89", "#515DA9", "#131F70"];
+    return colors[Math.floor(Math.random() * 3)]
 }
 
 init();
