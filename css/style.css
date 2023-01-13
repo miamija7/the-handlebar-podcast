@@ -50,7 +50,6 @@ h1 {
 section {
     margin: 0;
     padding: 0;
-    border-bottom: 1px solid white;
     height: 100vh;
     scroll-snap-align: start;
     text-align: center;
@@ -58,7 +57,7 @@ section {
 }
 .core  {
     position: absolute;
-    top: 40%;
+    top: 45%;
     transform: translateY(-50%);
     text-align: center;
     color: white;
@@ -93,13 +92,6 @@ p{
 
 h1  {
     font-size: 7em;
-}
-
-#platforms {
-    margin-bottom: 1.5em;
-}
-a {
-    padding: 0.5em;
 }
 
 input{
@@ -152,6 +144,11 @@ button:hover {
     top: 2em;
 }
 
+.icon {
+    width: 100px;
+    height: 100px;
+}
+
 /* Smaller devices (desktops, 992px and down) */
 @media screen and (max-width:992px) {
     h1 {
@@ -161,7 +158,8 @@ button:hover {
         font-size: 3em;
     }
     .icon {
-        width: 200px;
+        width: 100px;
+        height: 100px;
     }
     input:nth-of-type(1), input:nth-of-type(2), input:nth-of-type(3), input:nth-of-type(4) {
         all: unset;
@@ -186,5 +184,10 @@ button:hover {
 
     .cover-img {
         max-width: 300px;
+    }
+
+    nav{
+        left: 2em;
+        border-radius: 10px;
     }
 }

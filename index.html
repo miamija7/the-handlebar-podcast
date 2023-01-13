@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>The Handlebar podcast</title>
+    <title>The Handlebar Podcast</title>
     <link rel="shortcut icon" href="img/icon-handlebar-black.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
     <link rel="stylesheet" href="css/style.css" type="text/css">
@@ -19,21 +19,25 @@
 
     <div id="navbar" class="navbar-menu">
         <div class="navbar-start">
-            <a class="navbar-item">
-                Home
-            </a>
-
-            <a class="navbar-item">
-                Handlebars
-            </a>
-
-            <a class="navbar-item">
-                Support
-            </a>
-
-            <a class="navbar-item">
-                About
-            </a>
+            <div class="navbar-item has-dropdown is-hoverable">
+                <a class="navbar-link">
+                    <img src="img/icon-handlebar-black.png" alt="Handlebar">
+                </a>
+                <div class="navbar-dropdown">
+                    <a class="navbar-item" href="index.html">
+                        Home
+                    </a>
+                    <a class="navbar-item" href="handlebars.html">
+                        Handlebar Sessions
+                    </a>
+                    <a class="navbar-item"  href="about.html">
+                        About Us
+                    </a>
+                    <a class="navbar-item" href="support.html">
+                        Give
+                    </a>
+                </div>
+            </div>
         </div>
     </div>
 </nav>
@@ -58,22 +62,6 @@
         </svg>
     </div>
 </section>
-<!--<section>-->
-<!--    <div class="core">-->
-<!--        <h1 style="margin-bottom: 10px;">Listen</h1>-->
-<!--        <div id="platforms">-->
-<!--            <a href="https://podcasts.apple.com/us/podcast/the-handlebar-podcast/id1629208237"><img class="icon" src="img/icon-podcasts.png" alt="Apple Podcasts" width="45px"></a>-->
-<!--            <a href="https://open.spotify.com/show/7tGgBnNpm9MXQbXWcF2i4J"><img class="icon" src="img/icon-spotify.png" alt="Spotify" width="50px"></a>-->
-<!--        </div>-->
-<!--        <iframe id="embedPlayer" src="https://embed.podcasts.apple.com/us/podcast/the-handlebar-podcast/id1629208237?itsct=podcast_box_player&amp;itscg=30200&amp;ls=1&amp;theme=auto" height="450px" frameborder="0" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation-by-user-activation" allow="autoplay *; encrypted-media *; clipboard-write" style="width: 100%; max-width: 475px; overflow: hidden; border-radius: 10px; transform: translateZ(0px); animation: 2s ease 0s 6 normal none running loading-indicator; background-color: rgb(228, 228, 228);"></iframe>-->
-<!--    </div>-->
-<!--</section>-->
-<!--<section>-->
-<!--    <div class="core">-->
-<!--        <h1>About</h1>-->
-<!--        <p>The Handlebar podcast has conversations around questions that people are asking, and gives you "handlebars" to hold onto as you move forward in the Faith.<br><br>Episodes drop every Monday. ✌🏽</p>-->
-<!--    </div>-->
-<!--</section>-->
 <section>
     <div class="core">
         <h1>Ask a Question</h1>
@@ -86,17 +74,18 @@
         </form>
     </div>
 </section>
-<!--<section>-->
-<!--    <div class="core">-->
-<!--        <h1>Give</h1>-->
-<!--        <p>If you have been blessed by this podcast please consider giving!</p>-->
-<!--            <p>All donations go toward production costs, special guests, and the continuation of The Handlbar podcast ❤️</p>-->
-<!--        <a href="#"><img class="icon" width="70px" style="margin-bottom: 5px" src="img/icon-cashapp.png" alt="Cashapp"></a>-->
-<!--        <a href="#"><img class="icon" width="80px" src="img/icon-venmo.png" alt="Cashapp"></a>-->
-<!--    </div>-->
-<!--</section>-->
+<section>
+    <div class="core">
+        <h1>Listen<span>
+            <a href="https://podcasts.apple.com/us/podcast/the-handlebar-podcast/id1629208237"><img class="icon" src="img/icon-podcasts.png" alt="Apple Podcasts"></a>
+            <a href="https://open.spotify.com/show/7tGgBnNpm9MXQbXWcF2i4J"><img class="icon" src="img/icon-spotify.png" alt="Spotify"></a>
+      </span></h1>
+        <iframe id="embedPlayer" src="https://embed.podcasts.apple.com/us/podcast/the-handlebar-podcast/id1629208237?itsct=podcast_box_player&amp;itscg=30200&amp;ls=1&amp;theme=auto" height="450px" frameborder="0" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation-by-user-activation" allow="autoplay *; encrypted-media *; clipboard-write" style="width: 100%; max-width: 475px; overflow: hidden; border-radius: 10px; transform: translateZ(0px); animation: 2s ease 0s 6 normal none running loading-indicator; background-color: rgb(228, 228, 228);"></iframe>
+    </div>
+</section>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.trunk.min.js"></script>
 <script src="js/app.js"></script>
+<script src="js/cover.js"></script>
 </body>
 </html>
