@@ -104,7 +104,6 @@ input{
     background-color: white;
     margin: 0.5em 0;
     padding: 0.75em;
-    border-radius: 10px;
     text-align: left;
     width: 12%;
     color: black;
@@ -157,13 +156,14 @@ button:hover {
     .icon {
         width: 200px;
     }
-    input{
+    input:nth-of-type(1), input:nth-of-type(2), input:nth-of-type(3), input:nth-of-type(4) {
         all: unset;
         background-color: white;
-        padding: 1em;
-        border-radius: 200px;
-        text-align: left;
+        padding: 0.75em;
+        margin: 0.25em;
         width: 70%;
+        border-radius: 100px;
+        text-align: left;
         color: black;
     }
 
@@ -172,7 +172,7 @@ button:hover {
         cursor: pointer;
         background-color: black;
         padding: 0.75em;
-        width: 30%;
+        width: 70%;
         border-radius: 200px;
         margin: 1em auto;
     }
