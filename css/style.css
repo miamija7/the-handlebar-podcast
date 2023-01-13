@@ -176,4 +176,8 @@ button:hover {
         border-radius: 200px;
         margin: 1em auto;
     }
+
+    .cover-img {
+        max-width: 300px;
+    }
 }
