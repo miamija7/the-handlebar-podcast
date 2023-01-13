@@ -131,8 +131,6 @@ init();
 ////////  POST START  ////////
 window.addEventListener("load", function() {
     const form = document.getElementById('my-form');
-    const name = document.getElementById('Name');
-    const question = document.getElementById('Question');
     form.addEventListener("submit", function(e) {
         e.preventDefault();
         const data = new FormData(form);
@@ -143,9 +141,34 @@ window.addEventListener("load", function() {
         })
             .then(() => {
                 form.reset();
-                alert("Thank you for submitting a question! ❤️");
+                alert("Your question was submitted! ❤️");
             })
     });
 });
 ////////  POST END  ////////
+
+////////  NAVBAR START  ////////
+document.addEventListener('DOMContentLoaded', () => {
+
+    // Get all "navbar-burger" elements
+    const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+    // Add a click event on each of them
+    $navbarBurgers.forEach( el => {
+        el.addEventListener('click', () => {
+
+            // Get the target from the "data-target" attribute
+            const target = el.dataset.target;
+            const $target = document.getElementById(target);
+
+            // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+            el.classList.toggle('is-active');
+            $target.classList.toggle('is-active');
+
+        });
+    });
+
+});
+////////  NAVBAR END  ////////
+
 

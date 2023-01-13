@@ -4,9 +4,39 @@
     <meta charset="UTF-8">
     <title>The Handlebar podcast</title>
     <link rel="shortcut icon" href="img/icon-handlebar-black.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
     <link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
 <body>
+<nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbar">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+        </a>
+    </div>
+
+    <div id="navbar" class="navbar-menu">
+        <div class="navbar-start">
+            <a class="navbar-item">
+                Home
+            </a>
+
+            <a class="navbar-item">
+                Handlebars
+            </a>
+
+            <a class="navbar-item">
+                Support
+            </a>
+
+            <a class="navbar-item">
+                About
+            </a>
+        </div>
+    </div>
+</nav>
 <section id="your-element-selector">
     <div class="cover">
         <img class="cover-img" src="https://is4-ssl.mzstatic.com/image/thumb/Podcasts122/v4/23/cc/14/23cc14e4-26f8-3eb9-10e3-b414246a40f4/mza_15703807414649171805.jpg/600x600bb.jpg" alt="The Handlebar podcast">
@@ -48,10 +78,10 @@
     <div class="core">
         <h1>Ask a Question</h1>
         <form id="my-form" method="POST" action="https://script.google.com/macros/s/AKfycbya2vjwnZ_gvmwldXONdZP-MIw6o361JxRNDYi6aoiot7E3j-hm6IrKig3Ht7eqcIeh/exec" >
-            <input id="Question" name="Question" type="text" placeholder="Question" required><br>
-            <input id="Name" name="Name" type="text" placeholder="Name" required>
-            <input id="Age" name="Age" type="number" placeholder="Age" required>
-            <input id="City" name="City" type="text" placeholder="City" required><br>
+            <input id="Question" name="Question" type="text" placeholder="What is your question?" required><br>
+            <input id="Name" name="Name" type="text" placeholder="Your Name" required>
+            <input id="Age" name="Age" type="number" placeholder="Your Age" required>
+            <input id="City" name="City" type="text" placeholder="Where are you from?" required><br>
             <button type="submit">Send</button>
         </form>
     </div>
