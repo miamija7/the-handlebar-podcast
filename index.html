@@ -47,9 +47,12 @@
 <section>
     <div class="core">
         <h1>Ask a Question</h1>
-        <form action="#">
-            <input type="text" placeholder="What's your question?">
-            <button type="submit">Submit</button>
+        <form id="my-form" method="POST" action="https://script.google.com/macros/s/AKfycbya2vjwnZ_gvmwldXONdZP-MIw6o361JxRNDYi6aoiot7E3j-hm6IrKig3Ht7eqcIeh/exec" >
+            <input id="Question" name="Question" type="text" placeholder="Question" required><br>
+            <input id="Name" name="Name" type="text" placeholder="Name" required>
+            <input id="Age" name="Age" type="number" placeholder="Age" required>
+            <input id="City" name="City" type="text" placeholder="City" required><br>
+            <button type="submit">Send</button>
         </form>
     </div>
 </section>

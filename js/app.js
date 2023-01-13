@@ -127,3 +127,25 @@ const randomColor = ()=>{
 
 init();
 ////////  SNAP END  ////////
+
+////////  POST START  ////////
+window.addEventListener("load", function() {
+    const form = document.getElementById('my-form');
+    const name = document.getElementById('Name');
+    const question = document.getElementById('Question');
+    form.addEventListener("submit", function(e) {
+        e.preventDefault();
+        const data = new FormData(form);
+        const action = e.target.action;
+        fetch(action, {
+            method: 'POST',
+            body: data,
+        })
+            .then(() => {
+                form.reset();
+                alert("Thank you for submitting a question! ❤️");
+            })
+    });
+});
+////////  POST END  ////////
+
