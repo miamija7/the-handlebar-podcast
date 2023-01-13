@@ -21,7 +21,7 @@ VANTA.TRUNK({
     scaleMobile: 1.00,
     color: 0x1327bb,
     spacing: 7.0,
-    chaos: 4.00
+    chaos: 5.00
 })
 ////////  TRUNK END  ////////
 
