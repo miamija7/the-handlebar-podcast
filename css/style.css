@@ -75,7 +75,7 @@ section {
 
 .cover-img {
     width: 45%;
-    max-width: 500px;
+    max-width: 400px;
 }
 
 .cover:nth-of-type(2) {
@@ -166,6 +166,7 @@ button:hover {
         width: 70%;
         color: black;
     }
+
     button {
         display: block;
         cursor: pointer;

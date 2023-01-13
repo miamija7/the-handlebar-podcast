@@ -9,21 +9,21 @@ const loadPodcastByAppleId = async (id) => {
     }
 }
 
-// ////////  TRUNK START  ////////
-// VANTA.TRUNK({
-//     el: "#your-element-selector",
-//     mouseControls: true,
-//     touchControls: true,
-//     gyroControls: false,
-//     minHeight: 200.00,
-//     minWidth: 200.00,
-//     scale: 1.00,
-//     scaleMobile: 1.00,
-//     color: 0x1327bb,
-//     spacing: 7.0,
-//     chaos: 5.00
-// })
-// ////////  TRUNK END  ////////
+////////  TRUNK START  ////////
+VANTA.TRUNK({
+    el: "#your-element-selector",
+    mouseControls: true,
+    touchControls: true,
+    gyroControls: false,
+    minHeight: 70.00,
+    minWidth: 70.00,
+    scale: 1.00,
+    scaleMobile: 1.00,
+    color: 0x1327bb,
+    spacing: 0.50,
+    chaos: 5.00
+})
+////////  TRUNK END  ////////
 
 
 ////////  MORPH START  ////////
