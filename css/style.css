@@ -45,15 +45,13 @@ h2 {
 }
 
 #ask-a-question {
-    background-color: rgba(0,0,0,0.5);
-    padding: 0 0 0.5em 0;
+    padding: 1em 1em 1.5em 1em;
     border-radius: 10px;
     width: 40%;
-    /*border: 1px solid white*/
 }
 
 .form-control {
-    background-color: rgba(255,255,255,0.9);
+    background-color: rgba(255,255,255,0.85);
     border: none;
     padding: 0.5em;
 }
@@ -103,6 +101,7 @@ textarea{
     }
 
     #ask-a-question {
+        padding: 0;
         width: 90%;
     }
 }
@@ -118,6 +117,7 @@ textarea{
     }
 
     #ask-a-question {
+        padding: 0;
         width: 80%;
     }
 }
