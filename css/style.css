@@ -91,6 +91,10 @@ textarea{
 
 /* Smaller devices (desktops, 992px and down) */
 @media screen and (max-width:415px) {
+    .askAQuestion {
+        height: 300px;
+    }
+
     #wrapper {
         background-position: -58em;
     }
@@ -108,6 +112,9 @@ textarea{
 }
 
 @media screen and (max-width:960px) and (min-width: 415px){
+    .askAQuestion {
+        height: 300px;
+    }
     #wrapper {
         background-position: center;
     }
