@@ -1,6 +1,6 @@
 .navbar {
     position: relative;
-    z-index: 2;
+    z-index: 10;
     width: 100%;
     box-sizing: border-box;
     padding: 3vw 4vw;
