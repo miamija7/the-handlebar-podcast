@@ -6,7 +6,7 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>The Handlebar Podcast</title>
-    <link rel="shortcut icon" href="img/icon-handlebar-black.png" type="image/x-icon">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@700&display=swap" rel="stylesheet">
@@ -26,7 +26,7 @@
 
                 <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
                     <div class="offcanvas-header">
-                        <h1 class="offcanvas-title nav-home" style="color: black" id="offcanvasRightLabel">The <br>Handlebar <br>Podcast</h1>
+                        <h1 class="offcanvas-title nav-home" style="color: black" id="offcanvasRightLabel"><img width="200px" src="img/favicon.png" alt="THP"></h1>
                         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
                     <div class="offcanvas-body">
@@ -41,49 +41,41 @@
     </nav>
 </header>
 <main>
-    <section class="ask my-5">
-        <form class="row gx-3 gy-2 align-items-center">
-            <div class="col-sm-12">
-                <label for="Question" class="visually-hidden">Question</label>
-                <textarea class="form-control" id="Question" rows="2">Ask a question here...</textarea>
+    <section class="askAQuestion mx-auto px-3">
+        <form id="ask-a-question" class="row gx-3 gy-2 align-items-center" accept-charset="UTF-8" method="POST" action="https://script.google.com/macros/s/AKfycbya2vjwnZ_gvmwldXONdZP-MIw6o361JxRNDYi6aoiot7E3j-hm6IrKig3Ht7eqcIeh/exec">
+            <span><h2 style="float: left">ASK A QUESTION</h2>
+                <span style="float: right" class="form-pt1 pull-right ms-2 label label-default" id="count_message"></span>
+                <button style="float: right" class="form-pt2 label ms-2 hidden btn" type="button" id="button-back">Go Back</button>
+            </span>
+            <div class="form-pt1 input-group mt-0">
+                <div class="form-floating">
+                    <textarea style="height: 120px" maxlength="120" class="form-control" placeholder="Ask a question..." id="Question" name="Question" aria-label="Question" aria-describedby="button-next"></textarea>
+                    <label for="Question">Ask a Question...</label>
+                </div>
+                <button class="btn btn-light" type="button" id="button-next">Next</button>
             </div>
-            <div class="col-sm-5">
-                <label class="visually-hidden" for="Name">Name</label>
-                <input type="text" class="form-control" id="Name" placeholder="Your Name">
+
+            <div class="input-group mt-0">
+            <div class="form-pt2 hidden" style="width: calc(100% - 63px)">
+                <input style="border-radius: 5px 0 0 5px" id="Name" name="Name" type="text" aria-label="Name" class="form-control" placeholder="Name">
+                <input style="border-radius: 5px 0 0 5px" id="Age" name="Age" class="form-control" type="number" placeholder="Age" required min="1" max="99">
+                <input style="border-radius: 5px  0 0 5px" id="City" name="City" type="text" aria-label="City" class="form-control" placeholder="City">
             </div>
-            <div class="col-sm-5">
-                <label class="visually-hidden" for="City">City</label>
-                <input type="text" class="form-control" id="City" placeholder="Where are you from?">
-            </div>
-            <div class="col-sm-2">
-                <label class="visually-hidden" for="Age">Age</label>
-                <input id="Age" class="form-control" name="Age" type="number" placeholder="Age" required>
-            </div>
-            <div class="col-sm-12">
-                <button type="submit" class="btn btn-light submit">Submit</button>
+                <button type="submit" id="button-submit" class="form-pt2 btn btn-light submit hidden">Send</button>
             </div>
         </form>
-
-<!--        <h1>Ask a Question</h1>-->
-<!--        <form id="my-form" method="POST" action="https://script.google.com/macros/s/AKfycbya2vjwnZ_gvmwldXONdZP-MIw6o361JxRNDYi6aoiot7E3j-hm6IrKig3Ht7eqcIeh/exec" >-->
-<!--            <input id="Question" name="Question" type="text" placeholder="Ask a question..." required><br>-->
-<!--            <input id="Name" name="Name" type="text" placeholder="Name" required>-->
-<!--            <input id="Age" name="Age" type="number" placeholder="Age" required>-->
-<!--            <input id="City" name="City" type="text" placeholder="City" required><br>-->
-<!--            <button type="submit">Send</button>-->
-<!--        </form>-->
     </section>
-    <section>
-        <a href="https://podcasts.apple.com/us/podcast/the-handlebar-podcast/id1629208237?itsct=podcast_box_badge&amp;itscg=30200&amp;ls=1" style="display: inline-block; overflow: hidden; border-radius: 13px; width: 250px; height: 83px;" data-ol-has-click-handler=""><img src="https://tools.applemediaservices.com/api/badges/listen-on-apple-podcasts/badge/en-us?size=250x83&amp;releaseDate=1669024800" alt="Listen on Apple Podcasts" style="border-radius: 13px; width: 250px; height: 83px;"></a>
-        <br><iframe style="border-radius:12px" src="https://open.spotify.com/embed/show/7tGgBnNpm9MXQbXWcF2i4J?utm_source=generator" height="83" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    <section class="listen">
+        <iframe style="border-radius:12px; border: 1px solid white" src="https://open.spotify.com/embed/show/7tGgBnNpm9MXQbXWcF2i4J?utm_source=generator" height="83" width="250px" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        <a href="https://podcasts.apple.com/us/podcast/the-handlebar-podcast/id1629208237?itsct=podcast_box_badge&amp;itscg=30200&amp;ls=1" target="_blank" style="display: inline-block; overflow: hidden; border-radius: 13px; width: 250px; height: 83px;" data-ol-has-click-handler=""><img src="https://tools.applemediaservices.com/api/badges/listen-on-apple-podcasts/badge/en-us?size=250x83&amp;releaseDate=1669024800" alt="Listen on Apple Podcasts" style="border-radius: 13px; width: 250px; height: 83px;"></a>
     </section>
-
 </main>
 </div>
 <footer>
 
 </footer>
-
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+<script src="js/app.js"></script>
 </body>
 </html>
