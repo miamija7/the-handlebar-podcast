@@ -98,6 +98,7 @@ textarea{
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        padding: 0;
     }
 
     #ask-a-question {
@@ -114,6 +115,7 @@ textarea{
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        padding: 0;
     }
 
     #ask-a-question {
