@@ -45,12 +45,19 @@ h2 {
 
 .hosts {
     background-color: #EDECE9;
-    margin: 0 2em;
+    margin: 0 2em 6em 2em ;
+}
+
+.overflow-auto{
+    height: 150px;
 }
 
 @media screen and (max-width:722px) {
     .story{
         padding-right: 1em;
         padding-left: 1em;
+    }
+    .hosts{
+        margin: 0 2em 3em 2em ;
     }
 }
