@@ -50,24 +50,31 @@
             <div class="form-pt1 input-group mt-0">
                 <div class="form-floating">
                     <textarea style="height: 120px" maxlength="120" class="form-control" placeholder="Ask a question..." id="Question" name="Question" aria-label="Question" aria-describedby="button-next"></textarea>
-                    <label for="Question">Write your question here and click next!</label>
+                    <label for="Question">write your question here</label>
                 </div>
                 <button class="btn btn-light" type="button" id="button-next">Next</button>
             </div>
 
             <div class="input-group mt-0">
             <div class="form-pt2 hidden" style="width: calc(100% - 63px)">
-                <input style="border-radius: 5px 0 0 5px" id="Name" name="Name" type="text" aria-label="Name" class="form-control" placeholder="Name">
-                <input style="border-radius: 5px 0 0 5px" id="Age" name="Age" class="form-control" type="number" placeholder="Age" required min="1" max="99">
-                <input style="border-radius: 5px  0 0 5px" id="City" name="City" type="text" aria-label="City" class="form-control" placeholder="City">
+                <input style="border-radius: 5px 0 0 5px" id="Name" name="Name" type="text" aria-label="Name" class="form-control" placeholder="name">
+                <input style="border-radius: 5px 0 0 5px" id="Age" name="Age" class="form-control" type="number" placeholder="age" required min="1" max="99">
+                <input style="border-radius: 5px  0 0 5px" id="City" name="City" type="text" aria-label="City" class="form-control" placeholder="city">
             </div>
                 <button type="submit" id="button-submit" class="form-pt2 btn btn-light submit hidden">Send</button>
             </div>
         </form>
     </section>
+<!--    <section class="listen">-->
+<!--        <iframe style="border-radius:12px; border: 1px solid white" src="https://open.spotify.com/embed/show/7tGgBnNpm9MXQbXWcF2i4J?utm_source=generator" height="83" width="250px" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>-->
+<!--        <a href="https://podcasts.apple.com/us/podcast/the-handlebar-podcast/id1629208237?itsct=podcast_box_badge&amp;itscg=30200&amp;ls=1" target="_blank" style="display: inline-block; overflow: hidden; border-radius: 13px; width: 250px; height: 83px;" data-ol-has-click-handler=""><img src="https://tools.applemediaservices.com/api/badges/listen-on-apple-podcasts/badge/en-us?size=250x83&amp;releaseDate=1669024800" alt="Listen on Apple Podcasts" style="border-radius: 13px; width: 250px; height: 83px;"></a>-->
+<!--    </section>-->
     <section class="listen">
-        <iframe style="border-radius:12px; border: 1px solid white" src="https://open.spotify.com/embed/show/7tGgBnNpm9MXQbXWcF2i4J?utm_source=generator" height="83" width="250px" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-        <a href="https://podcasts.apple.com/us/podcast/the-handlebar-podcast/id1629208237?itsct=podcast_box_badge&amp;itscg=30200&amp;ls=1" target="_blank" style="display: inline-block; overflow: hidden; border-radius: 13px; width: 250px; height: 83px;" data-ol-has-click-handler=""><img src="https://tools.applemediaservices.com/api/badges/listen-on-apple-podcasts/badge/en-us?size=250x83&amp;releaseDate=1669024800" alt="Listen on Apple Podcasts" style="border-radius: 13px; width: 250px; height: 83px;"></a>
+        <iframe id="embedPlayer" src="https://embed.podcasts.apple.com/us/podcast/the-handlebar-podcast/id1629208237?itsct=podcast_box_player&amp;itscg=30200&amp;ls=1&amp;theme=auto" height="450px" frameborder="0" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation-by-user-activation" allow="autoplay *; encrypted-media *; clipboard-write" style="width: 100%; max-width: 560px; overflow: hidden; border-radius: 10px; transform: translateZ(0px); animation: 2s ease 0s 6 normal none running loading-indicator; background-color: rgb(228, 228, 228);"></iframe>
+        <article class="links">
+            <a href=""><img id="apple" src="img/apple.png" alt="Listen on Apple Music"></a>
+            <a href=""><img id="spotify" src="img/spotify.png" alt="Listen on Spotify"></a>
+        </article>
     </section>
 </main>
 </div>
