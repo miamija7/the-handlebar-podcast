@@ -55,20 +55,14 @@ h2 {
 }
 
 .form-control {
-    /*background-color: rgba(255,255,255,0.85);*/
-    background-color: rgba(20,20,20,0.75);
+    background-color: rgba(255,255,255,0.85);
+    /*background-color: rgba(20,20,20,0.75);*/
     color: white;
     border: none;
     padding: 0.5em 0.85em ;
 }
 
-.form-control:active, .form-control:focus{
-    background-color: rgba(20,20,20,0.9);
-    color: white;
-}
-
 .form-control::placeholder, label{
-    color: darkgrey;
     font-size: 0.75em;
 }
 
@@ -107,14 +101,17 @@ textarea{
 }
 
 .links{
-    padding: 20px;
+    padding: 30px;
+    display: flex;
+    align-items: end;
 }
 
 #apple{
-    width: 100px;
+    width: 3em;
+    margin-right: 1em;
 }
 #spotify{
-    width: 84px;
+    width: calc(3em - 8px);
 }
 
 /*.listen{*/
