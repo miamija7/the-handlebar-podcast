@@ -1,0 +1,56 @@
+body{
+    background-color: #807866;
+}
+.navbar {
+    position: relative;
+    z-index: 10;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 3vw 4vw;
+}
+.nav-home {
+    text-decoration: none;
+    color: white;
+    font-size: 2.25em;
+    font-family: 'Almarai', sans-serif;
+    text-transform: uppercase;
+}
+
+.dropdown-item{
+    font-size: 1.5em;
+}
+.dropdown-item:hover{
+    opacity: 60%;
+}
+
+small > a > img {
+    width: 30px;
+    margin-right: 7px;
+}
+h1, h2, h5 {
+    font-family: 'Almarai', sans-serif;
+}
+h2, h5 {
+    text-transform: uppercase;
+}
+h2 {
+    padding: 1em 0;
+}
+
+.story {
+    padding-right: 10em ;
+    padding-left: 10em ;
+    margin-bottom: 2em;
+}
+
+.hosts {
+    background-color: #EDECE9;
+    margin: 0 2em;
+}
+
+@media screen and (max-width:722px) {
+    .story{
+        padding-right: 1em;
+        padding-left: 1em;
+    }
+}

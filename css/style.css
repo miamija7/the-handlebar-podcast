@@ -1,5 +1,5 @@
 body{
-    background-color: #8C8D89;
+    background-color: #807866;
 }
 .navbar {
     position: relative;
@@ -21,6 +21,13 @@ body{
 }
 .dropdown-item:hover{
     opacity: 60%;
+}
+footer {
+    color: white;
+    font-size: 0.75em;
+    position: absolute;
+    bottom: 0;
+    padding: 0.5em;
 }
 
 .askAQuestion {
