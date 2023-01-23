@@ -52,6 +52,12 @@ h2 {
     height: 150px;
 }
 
+#error-box{
+   display: none !important;
+}
+
+
+
 @media screen and (max-width:722px) {
     .story{
         padding-right: 1em;

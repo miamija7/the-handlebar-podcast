@@ -94,7 +94,7 @@ textarea{
     background-color: lightgrey;
 }
 .listen{
-    margin-top: 20px;
+    /*margin-top: 20px;*/
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -109,11 +109,11 @@ textarea{
 }
 
 #apple{
-    width: 3em;
+    width: 30px;
     margin-right: 1em;
 }
 #spotify{
-    width: calc(3em - 8px);
+    width: calc(30px);
 }
 
 /* Smaller devices (desktops, 992px and down) */
