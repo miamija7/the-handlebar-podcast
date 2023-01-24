@@ -56,6 +56,9 @@ h2 {
    display: none !important;
 }
 
+.step {
+    background-color: #515da9 !important;
+}
 
 
 @media screen and (max-width:722px) {
