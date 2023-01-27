@@ -37,6 +37,10 @@ h2 {
     padding: 1em 0;
 }
 
+.greeting{
+    max-width: 1000px;
+}
+
 .story {
     padding-right: 10em ;
     padding-left: 10em ;
