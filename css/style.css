@@ -123,6 +123,10 @@ textarea{
 
 /* Smaller devices (desktops, 992px and down) */
 @media screen and (max-width:415px) {
+    .nav-home{
+        font-size: 1em;
+    }
+
     .askAQuestion {
         height: 300px;
     }

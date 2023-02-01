@@ -66,6 +66,10 @@ h2 {
 
 
 @media screen and (max-width:722px) {
+    .nav-home{
+        font-size: 1em;
+    }
+
     .story{
         padding-right: 1em;
         padding-left: 1em;
