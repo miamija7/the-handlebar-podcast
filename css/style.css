@@ -1,5 +1,5 @@
 body{
-    background-color: #807866;
+    background-color: #A69F90;
 }
 .navbar {
     position: relative;
@@ -22,137 +22,54 @@ body{
 .dropdown-item:hover{
     opacity: 60%;
 }
-/*footer {*/
-/*    color: white;*/
-/*    font-size: 0.75em;*/
-/*}*/
-
-.askAQuestion {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#wrapper {
-    background-image: url("../img/table-2.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    min-height: 100vh;
-    background-attachment: fixed;
-}
-
-
-h2 {
-    font-family: 'Almarai', sans-serif;
-    font-size: 1.5em;
-    color: white;
-    margin-left: auto;
-    margin-right: auto
-}
 
 small > a > img {
     width: 30px;
     margin-right: 7px;
 }
-
-#ask-a-question {
-    padding: 0;
-    border-radius: 10px;
-    max-width: 560px;
+h1, h2, h5 {
+    font-family: 'Almarai', sans-serif;
+}
+h2, h5 {
+    text-transform: uppercase;
+}
+h2 {
+    padding: 1em 0;
 }
 
-.form-control {
-    background-color: rgba(255,255,255,0.85);
-    color: black;
-    border: none;
-    padding: 0.5em 0.85em ;
+.greeting{
+    max-width: 1000px;
 }
 
-.form-control::placeholder, label{
-    font-size: 0.75em;
+.story {
+    padding-right: 10em ;
+    padding-left: 10em ;
+    margin-bottom: 2em;
 }
 
-
-textarea{
-    height: 100px;
-    max-height: 150px;
+.hosts {
+    background-color: #EDECE9;
+    margin: 0 1em 4em 1em ;
 }
 
-.hidden {
-    display: none;
+.overflow-auto{
+    height: 150px;
 }
 
-.label{
-    background-color: white;
-    padding: 3px;
-    border-radius: 5px;
-    color: black;
-    font-size: 0.75em;
-    width: auto;
-    box-sizing: border-box;
-    min-height: 26px;
+#error-box{
+   display: none !important;
 }
 
-
-#button-back:hover{
-    background-color: lightgrey;
-}
-.listen{
-    /*margin-top: 20px;*/
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 1em;
-}
-
-.links{
-    padding: 30px;
-    display: flex;
-    align-items: end;
-}
-
-#apple{
-    width: 30px;
-    margin-right: 1em;
-}
-#spotify{
-    width: calc(30px);
-}
-
-/* Smaller devices (desktops, 992px and down) */
-@media screen and (max-width:415px) {
+@media screen and (max-width:722px) {
     .nav-home{
         font-size: 1em;
     }
 
-    .askAQuestion {
-        height: 300px;
+    .story{
+        padding-right: 1em;
+        padding-left: 1em;
     }
-
-    #wrapper {
-        background-position: 80%;
-    }
-    .listen{
-        padding: 1em;
-    }
-    #ask-a-question {
-        padding: 0;
-        width: 100%;
-    }
-}
-
-@media screen and (max-width:960px) and (min-width: 415px){
-    .askAQuestion {
-        height: 300px;
-    }
-    #wrapper {
-        background-position: center;
-    }
-
-    #ask-a-question {
-        padding: 0;
-        width: 80%;
+    .hosts{
+        margin: 0 1em 2em 1em ;
     }
 }

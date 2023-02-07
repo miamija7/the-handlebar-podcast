@@ -1,0 +1,158 @@
+body{
+    background-color: #807866;
+}
+.navbar {
+    position: relative;
+    z-index: 10;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 3vw 4vw;
+}
+.nav-home {
+    text-decoration: none;
+    color: white;
+    font-size: 2.25em;
+    font-family: 'Almarai', sans-serif;
+    text-transform: uppercase;
+}
+
+.dropdown-item{
+    font-size: 1.5em;
+}
+.dropdown-item:hover{
+    opacity: 60%;
+}
+/*footer {*/
+/*    color: white;*/
+/*    font-size: 0.75em;*/
+/*}*/
+
+.askAQuestion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#wrapper {
+    background-image: url("../img/table-2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    background-attachment: fixed;
+}
+
+
+h2 {
+    font-family: 'Almarai', sans-serif;
+    font-size: 1.5em;
+    color: white;
+    margin-left: auto;
+    margin-right: auto
+}
+
+small > a > img {
+    width: 30px;
+    margin-right: 7px;
+}
+
+#ask-a-question {
+    padding: 0;
+    border-radius: 10px;
+    max-width: 560px;
+}
+
+.form-control {
+    background-color: rgba(255,255,255,0.85);
+    color: black;
+    border: none;
+    padding: 0.5em 0.85em ;
+}
+
+.form-control::placeholder, label{
+    font-size: 0.75em;
+}
+
+
+textarea{
+    height: 100px;
+    max-height: 150px;
+}
+
+.hidden {
+    display: none;
+}
+
+.label{
+    background-color: white;
+    padding: 3px;
+    border-radius: 5px;
+    color: black;
+    font-size: 0.75em;
+    width: auto;
+    box-sizing: border-box;
+    min-height: 26px;
+}
+
+
+#button-back:hover{
+    background-color: lightgrey;
+}
+.listen{
+    /*margin-top: 20px;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+}
+
+.links{
+    padding: 30px;
+    display: flex;
+    align-items: end;
+}
+
+#apple{
+    width: 30px;
+    margin-right: 1em;
+}
+#spotify{
+    width: calc(30px);
+}
+
+/* Smaller devices (desktops, 992px and down) */
+@media screen and (max-width:415px) {
+    .nav-home{
+        font-size: 1em;
+    }
+
+    .askAQuestion {
+        height: 300px;
+    }
+
+    #wrapper {
+        background-position: 80%;
+    }
+    .listen{
+        padding: 1em;
+    }
+    #ask-a-question {
+        padding: 0;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:960px) and (min-width: 415px){
+    .askAQuestion {
+        height: 300px;
+    }
+    #wrapper {
+        background-position: center;
+    }
+
+    #ask-a-question {
+        padding: 0;
+        width: 80%;
+    }
+}
