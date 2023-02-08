@@ -132,7 +132,8 @@ textarea{
     }
 
     #wrapper {
-        background-position: 80%;
+        /*background-position: 80%;*/
+        background-position: 52%;
     }
     .listen{
         padding: 1em;
