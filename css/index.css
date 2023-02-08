@@ -108,7 +108,7 @@ textarea{
 }
 
 .links{
-    padding: 30px;
+    padding: 30px 30px 0 30px;
     display: flex;
     align-items: end;
 }
@@ -127,13 +127,19 @@ textarea{
         font-size: 1em;
     }
 
+    .links {
+        padding-bottom: 30px;
+    }
     .askAQuestion {
+        margin-top: 5em;
         height: 300px;
     }
 
     #wrapper {
         /*background-position: 80%;*/
-        background-position: 52%;
+        background-size: contain;
+        background-position: top;
+        background-attachment: unset;
     }
     .listen{
         padding: 1em;
@@ -146,6 +152,7 @@ textarea{
 
 @media screen and (max-width:960px) and (min-width: 415px){
     .askAQuestion {
+        margin-top: 5em;
         height: 300px;
     }
     #wrapper {
