@@ -21,7 +21,7 @@ $('#button-back').click(function (){
 /////// LIVE CHAR COUNT END ///////
 
 
-/////// POST FORM START ///////
+/////// ASK FORM START ///////
 window.addEventListener("load", function() {
     const form = document.getElementById('ask-a-question');
     form.addEventListener("submit", function(e) {
@@ -39,4 +39,5 @@ window.addEventListener("load", function() {
         })
     });
 });
-/////// POST FORM END ///////
+/////// ASK FORM END ///////
+

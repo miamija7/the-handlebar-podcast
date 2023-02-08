@@ -60,6 +60,14 @@ h2 {
    display: none !important;
 }
 
+#sign-up {
+    width: 80%
+}
+
+#form {
+    height: 500px;
+}
+
 @media screen and (max-width:722px) {
     .nav-home{
         font-size: 1em;
@@ -71,5 +79,10 @@ h2 {
     }
     .hosts{
         margin: 0 1em 2em 1em ;
+    }
+
+    #form {
+        height: 700px;
+        padding-top: 1em;
     }
 }
