@@ -24,8 +24,10 @@ $('#button-back').click(function (){
 /////// ASK FORM START ///////
 window.addEventListener("load", function() {
     const form = document.getElementById('ask-a-question');
+    const submitBtn = document.querySelector('#button-submit');
     form.addEventListener("submit", function(e) {
         e.preventDefault();
+        submitBtn.classList.add('disabled');
         const data = new FormData(form);
         const action = e.target.action;
         fetch(action, {
@@ -36,6 +38,7 @@ window.addEventListener("load", function() {
             $('.form-pt2').toggleClass('hidden');
             $('.form-pt1').toggleClass('hidden');
             alert("Your question was submitted! ❤️");
+            submitBtn.classList.remove('disabled');
         })
     });
 });
