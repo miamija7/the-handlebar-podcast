@@ -2,8 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>The Handlebar Podcast</title>
     <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
@@ -23,7 +22,6 @@
             </div>
             <div class="col-2 d-flex justify-content-end align-items-start p-0">
                 <button class="btn border-0 btn-light bg-transparent p-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><img width="50px" src="img/icon-menu.png" alt="Menu"></button>
-
                 <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
                     <div class="offcanvas-header">
                         <h1 class="offcanvas-title nav-home" style="color: black" id="offcanvasRightLabel"><img width="200px" src="img/favicon.png" alt="THP"></h1>
@@ -50,7 +48,8 @@
 <main>
     <section class="askAQuestion mx-auto px-2">
         <form id="ask-a-question" class="row gx-3 gy-2 align-items-center mt-5" accept-charset="UTF-8" method="POST" action="https://script.google.com/macros/s/AKfycbyq36WIXvDwDAqTRu_L2MoUTs-ThUAtvcxQ67DdO5SZ85wXkMkw04MROd--8VWARhKm8A/exec">
-            <span><h2 style="float: left">ASK A QUESTION</h2>
+            <span>
+                <h2 style="float: left">ASK A QUESTION</h2>
                 <span style="float: right" class="form-pt1 pull-right ms-2 label label-default" id="count_message"></span>
                 <button style="float: right" class="form-pt2 label ms-2 hidden btn" type="button" id="button-back">Go Back</button>
             </span>
@@ -61,20 +60,19 @@
                 </div>
                 <button class="btn btn-light" type="button" id="button-next">Next</button>
             </div>
-
             <div class="input-group mt-0">
-            <div class="form-pt2 hidden" style="width: calc(100% - 63px)">
-                <input style="border-radius: 5px 0 0 5px" maxlength="50" id="Name" name="Name" type="text" aria-label="Name" class="form-control" placeholder="name">
-                <input style="border-radius: 5px 0 0 5px" id="Age" name="Age" class="form-control" type="number" placeholder="age" required min="1" max="99">
-                <input style="border-radius: 5px  0 0 5px" maxlength="50" id="City" name="City" type="text" aria-label="City" class="form-control" placeholder="city" maxlength="100">
-            </div>
+                <div class="form-pt2 hidden" style="width: calc(100% - 63px)">
+                    <input style="border-radius: 5px 0 0 5px" maxlength="50" id="Name" name="Name" type="text" aria-label="Name" class="form-control" placeholder="name">
+                    <input style="border-radius: 5px 0 0 5px" id="Age" name="Age" class="form-control" type="number" placeholder="age" required min="1" max="99">
+                    <input style="border-radius: 5px  0 0 5px" maxlength="50" id="City" name="City" type="text" aria-label="City" class="form-control" placeholder="city" maxlength="100">
+                </div>
                 <button type="submit" id="button-submit" class="form-pt2 btn btn-light submit hidden">Send</button>
             </div>
         </form>
     </section>
     <section class="listen">
         <iframe id="embedPlayer" src="https://embed.podcasts.apple.com/us/podcast/the-handlebar-podcast/id1629208237?itsct=podcast_box_player&amp;itscg=30200&amp;ls=1&amp;theme=dark" height="450px" frameborder="0" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation-by-user-activation" allow="autoplay *; encrypted-media *; clipboard-write" style="height:285px; width: 100%; max-width: 545px; overflow: hidden; border-radius: 10px; transform: translateZ(0px); animation: 2s ease 0s 6 normal none running loading-indicator; background-color: rgb(228, 228, 228);"></iframe>
-       <article class="links">
+        <article class="links">
             <a href="https://podcasts.apple.com/us/podcast/the-handlebar-podcast/id1629208237?itsct=podcast_box_badge&itscg=30200&ls=1" target="_blank"><img id="apple" src="img/icon-apple.png" alt="Listen on Apple Music"></a>
             <a href="https://open.spotify.com/show/7tGgBnNpm9MXQbXWcF2i4J?si=36c2772409e24c53" target="_blank"><img id="spotify" src="img/icon-spotify.png" alt="Listen on Spotify"></a>
         </article>
