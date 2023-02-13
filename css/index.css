@@ -123,6 +123,10 @@ textarea{
 
 /* Smaller devices (desktops, 992px and down) */
 @media screen and (max-width:415px) {
+    body{
+        background-image: url("../img/background.jpg");
+        background-size: cover;
+    }
     .nav-home{
         font-size: 1em;
     }
