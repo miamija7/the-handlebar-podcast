@@ -123,10 +123,10 @@ textarea{
 
 /* Smaller devices (desktops, 992px and down) */
 @media screen and (max-width:415px) {
-    body{
-        background-image: url("../img/background.jpg");
-        background-size: cover;
-    }
+    /*body{*/
+    /*    background-image: url("../img/background.jpg");*/
+    /*    background-size: cover;*/
+    /*}*/
     .nav-home{
         font-size: 1em;
     }
@@ -141,8 +141,8 @@ textarea{
 
     #wrapper {
         /*background-position: 80%;*/
-        background-size: contain;
-        background-position: top;
+        background-size: 500%;
+        background-position: 52%;
         background-attachment: unset;
     }
     .listen{
