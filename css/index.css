@@ -104,11 +104,11 @@ textarea{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 1em;
+    padding: 0 1em;
 }
 
 .links{
-    padding: 30px 30px 0 30px;
+    padding: 1em;
     display: flex;
     align-items: end;
 }
@@ -123,10 +123,12 @@ textarea{
 
 /* Smaller devices (desktops, 992px and down) */
 @media screen and (max-width:415px) {
-    /*body{*/
-    /*    background-image: url("../img/background.jpg");*/
-    /*    background-size: cover;*/
-    /*}*/
+    body{
+        /* alternate background option */
+        background-image: url("../img/background.jpg");
+        background-size: cover;
+    }
+
     .nav-home{
         font-size: 1em;
     }
@@ -135,19 +137,23 @@ textarea{
         padding-bottom: 30px;
     }
     .askAQuestion {
-        /*margin-top: 5em;*/
-        margin-top: -4em;
-        height: 300px;
+        /* alternate background option */
+        /*margin-top: -4em;*/
+        margin-top: 5em;
+        height: 250px;
     }
 
     #wrapper {
         /*background-position: 80%;*/
-        background-size: 500%;
-        background-position: 52%;
+        /* alternate background option */
+        /*background-size: 500%;*/
+        /*background-position: 52%;*/
+        background-size: contain;
+        background-position: top;
         background-attachment: unset;
     }
     .listen{
-        padding: 1em;
+        padding: 0 1em;
     }
     #ask-a-question {
         padding: 0;
