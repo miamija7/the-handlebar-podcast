@@ -120,9 +120,19 @@ textarea{
 #spotify{
     width: calc(30px);
 }
+#myVideo {
+    display: none;
+}
 
 /* Smaller devices (desktops, 992px and down) */
 @media screen and (max-width:415px) {
+    #myVideo {
+        display: unset;
+        z-index: -2;
+        position: absolute;
+        top: 31%;
+        max-width: 80vh;
+    }
     body{
         /* alternate background option */
         background-image: url("../img/background.jpg");
