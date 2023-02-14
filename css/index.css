@@ -94,10 +94,10 @@ textarea{
     min-height: 26px;
 }
 
-
 #button-back:hover{
     background-color: lightgrey;
 }
+
 .listen{
     /*margin-top: 20px;*/
     display: flex;
@@ -117,9 +117,11 @@ textarea{
     width: 30px;
     margin-right: 1em;
 }
+
 #spotify{
     width: calc(30px);
 }
+
 #myVideo {
     display: none;
 }
@@ -130,15 +132,12 @@ textarea{
         display: unset;
         z-index: -2;
         position: fixed;
-        bottom: -1em;
-        max-width: 100vw !important;
+        bottom: 0;
+        /*max-width: 100vw !important;*/    /* video only */
+        max-height: 100%;                   /* video only */
+        left: -3em;                         /* video only */
     }
-    body{
-        /* alternate background option */
-        /*background-image: url("../img/background.jpg");*/
-        /*background-size: cover;*/
-        /*background-position:  center bottom;*/
-    }
+
     .nav-home{
         font-size: 1em;
     }
@@ -147,28 +146,42 @@ textarea{
         padding-bottom: 30px;
     }
     .askAQuestion {
-        /* alternate background option */
-        /*margin-top: -4em;*/
-        margin-top: 5em;
+        /*margin-top: 5em;*/    /* video only */
+        margin-top: 0;        /* video only */
         height: 300px;
     }
 
     #wrapper {
-        /*background-position: 80%;*/
-        /* alternate background option */
-        /*background-size: 500%;*/
-        /*background-position: 52%;*/
+        background-image: unset; /* video only */
         background-size: contain;
         background-position: top;
         background-attachment: unset;
     }
+
     .listen{
         padding: 1em;
     }
+
     #ask-a-question {
         padding: 0;
         width: 100%;
     }
+
+    /* alternate background option */
+    /*body{*/
+    /*background-image: url("../img/background.jpg");*/
+    /*background-size: cover;*/
+    /*background-position:  center bottom;*/
+    /*}*/
+
+    /*.askAQuestion {*/
+    /*margin-top: -4em;*/
+    /*}*/
+
+    /*#wrapper {*/
+    /*background-size: 500%;*/
+    /*background-position: 52%;*/
+    /*}*/
 }
 
 @media screen and (max-width:960px) and (min-width: 415px){
