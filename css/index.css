@@ -134,8 +134,8 @@ textarea{
         position: fixed;
         bottom: 0;
         /*max-width: 100vw !important;*/    /* video only */
-        max-height: 100%;                   /* video only */
-        min-width: 100%;                   /* video only */
+        min-height: 100%;                   /* video only */
+        min-width: 100vw !important;
     }
 
     .nav-home{
