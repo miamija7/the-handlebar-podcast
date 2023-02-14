@@ -132,10 +132,10 @@ textarea{
         display: unset;
         z-index: -2;
         position: fixed;
-        bottom: 0;
-        /*max-width: 100vw !important;*/    /* video only */
-        min-height: 100%;                   /* video only */
-        min-width: 100vw !important;
+        top: 0;
+        /*max-width: 100vw !important;*/     /* video only */
+        height: 100vh;                   /* video only */
+        min-width: 100vw !important;         /* video only */
     }
 
     .nav-home{
